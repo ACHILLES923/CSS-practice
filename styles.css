@@ -198,12 +198,14 @@
 footer{
 	background: #1F2937;
 	color:white;
+	height:40px;
 /*	border: 1px solid yellow;*/
 }
 
 footer div{
 	width:300px;
-	margin:20px auto;
+	margin:30px auto;
+	padding: 10px;
 }
 
 
