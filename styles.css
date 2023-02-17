@@ -1,8 +1,8 @@
 *{
 	padding:0;
 	margin: 0;
-/*	box-sizing: border-box;*/
-font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -44,17 +44,10 @@ font-family: 'Poppins', sans-serif;
 	display: flex;
 /*	border: 2px solid red;*/
 	flex:1;
-	height: 40%;
-}
-
-
-/*----------------------------------------*/
-
-#section1 {
+	height: 80vh;
 	justify-content: space-around;
 	gap: 2em;
 }
-
 
 #section1 {
 	background: #1F2937;
@@ -77,18 +70,10 @@ font-family: 'Poppins', sans-serif;
 	font-size: 24px;
 	color: #E5E7EB;	
 	margin-bottom: 15px;
+	text-align: center;
+/*	font-weight: b;*/
 }
 
-#section1 button{
-	background: #3882F6;
-	width: 100px;
-	height:40px;
-	font-size: 18px;
-	border-radius: 7px;
-	color: #F9FAF8;
-	border:2px solid white;
-	margin-left: 7px;
-}
 
 #section1 img{
 	padding: 20px;
@@ -105,6 +90,9 @@ font-family: 'Poppins', sans-serif;
 
 #section2{
 	padding:25px 50px 70px;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -119,36 +107,64 @@ font-family: 'Poppins', sans-serif;
 
 #section2 .gallery{
 	display: flex;
-	justify-content: center;
-	gap: 2.5em;
-	flex:1;
+/*	flex-wrap: wrap;*/
+	justify-content: space-between;
+	flex:1 1 250px;
+/*	border: 1px solid  green;*/
+/*	align-items: flex-start;*/
+	margin: 10px 40px;
+	width:90vw;
 }
 
-.gallery #image1,#image2, #image3, #image4{
+.gallery #image1, #image2, #image3, #image4{
 /*	border: 1px solid red;*/
-	width:20%;
-	height:20%;
+	width:400px;
+	height:500px;
 	text-align: center;
+}
+
+.gallery img:hover{
+	cursor: pointer;
+	opacity:0.5;
+	transition: 0.3s;
 }
 
 .gallery img{
 	border-radius: 10px;
-	margin-bottom: 10px;
+	width:100%;
+	height:90%;
+	object-fit: cover;
 }
 
-#section2 img {
-	width:100%;
+#image3 img{
+	object-fit: contain;
+}
+
+.gallery .image-description{
+	text-align:center;
+	font-size: 25px;
+	font-weight: bold;
+	color: #1F2937;
+	margin-top: 2px;
 }
 
 /*------------------------------------------------*/
 
 #section3 {
 	padding:80px;
-	background: #E5E7EB;
 	font-size:36px;
 	font-weight: bold;
 	font-style: italic;
-	color: #1F2937;
+	color: whitesmoke;
+	height: 90vh;
+}
+
+#section3 { 
+  background: url("./img/jahad-eyes.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #section3 div{
@@ -171,11 +187,11 @@ font-family: 'Poppins', sans-serif;
 	background: #3882F6;
 	display: flex;
 	flex:1;
-	margin:50px auto;
 	padding:40px;
 /*	max-width:1200px;*/
 	justify-content: center;
 	font-size: 25px;
+	height:150px;
 }
 
 .sign-up  div{
@@ -205,8 +221,8 @@ footer{
 
 footer div{
 	width:300px;
-	margin:30px auto;
-	padding: 10px;
+	margin:auto;
+	padding: 8px;
 }
 
 
